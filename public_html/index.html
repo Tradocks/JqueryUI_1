@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>query Interfaces de Usuario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.js" type="text/javascript"></script>
+        <script src="js/datepicker-es.js" type="text/javascript"></script>
+        <script src="js/codigo.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>Jquery - User interface</h1>
+        <hr>
+        <div id="acordeon">
+            <h3>Ejemplo 1</h3>
+            <div>
+                <h2>Programa de la Facultad de ingenieria</h2>
+                <ul>
+                    <li>Ingenieria de sitemas</li>
+                    <li>Ingenieria Electronica</li>
+                    <li>Ingenieria civil</li>
+                </ul>
+                <i>Decano: Nelson Jaramillo</i>
+            </div>
+            
+            <h3>Ejemplo 2</h3>
+            <div>
+                <h2>Registro de empleado</h2>
+                <form id="ejemplo2">
+                    <label>Nombre empleado</label><br>
+                    <input type="text" name="textemp"  id="txtemp"><br>
+                    
+                    <label for="from">Fecha de ingreso</label>
+                    <input type="text" id="from" name="from"><br>
+                    <label for="to">Fecha de salida</label>
+                    <input type="text" id="to" name="to"><br>
+                     <label>Edad</label><br>
+                    <div id="barrraed">
+                        <div id="edad" class="Barra"></div>
+                    </div>
+                     <br> 
+                    <label>Genero</label><br>
+                    <label for="opt1">Masculino</label>
+                    <input type="radio" name="ptgen" id="opt1" class="opciones">
+                    <label for="opt2">Femenino</label>
+                    <input type="radio" name="ptgen" id="opt2" class="opciones">
+                    
+                    <hr>
+                    <input type="submit"  value="Enviar datos" name="procesar"  id="procesar" class="botones">
+                    <input type="reset" name="limpíar"  id="limpiar" class="botones">  
+                   
+                    
+                </form>
+            </div>
+            <h3>Ejemplo 3</h3>
+            <div>
+                <h2>Ejemplo de dialogo</h2>
+                <input type="button" class="botones" value="visualizar" id="camdVer">                
+            </div>             
+       </div>
+            
+        <div id="divdialog" title="Iniciar Sesión">
+            <form id="frmsesion">
+                <label>Usuario</label><br>
+                <input type="text" name="txtusu" required><br>
+                <label>Clave</label><br>
+                <input type="password" name="txtcla" required><br>
+                <input type="submit" value="Ingesar al Sitema">                
+            </form>            
+        </div>
+        
+    </body>
+</html>
